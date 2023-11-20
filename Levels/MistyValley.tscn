@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://chri8b0oseuoe"]
+
+[ext_resource type="Texture2D" uid="uid://cy0c2os8jo1np" path="res://[Sprout Lands] UI Pack/Sprite sheets/UI Big Play Button.png" id="1_fsn3m"]
+[ext_resource type="Script" path="res://Levels/play.gd" id="1_y2k74"]
+
+[node name="Node2D" type="Node2D"]
+metadata/_edit_horizontal_guides_ = []
+
+[node name="play" type="Button" parent="."]
+offset_left = 130.0
+offset_top = 99.0
+offset_right = 191.0
+offset_bottom = 119.0
+script = ExtResource("1_y2k74")
+
+[node name="Sprite2D" type="Sprite2D" parent="play"]
+position = Vector2(31, 10)
+scale = Vector2(0.742668, 0.778842)
+texture = ExtResource("1_fsn3m")
+hframes = 2
+vframes = 2
+frame = 2
+
+[node name="quit" type="Button" parent="."]
+offset_left = 130.0
+offset_top = 128.0
+offset_right = 191.0
+offset_bottom = 148.0
+
+[node name="Sprite2D" type="Sprite2D" parent="quit"]
+position = Vector2(31, 10)
+scale = Vector2(0.742668, 0.778842)
+texture = ExtResource("1_fsn3m")
+hframes = 2
+vframes = 2
+
+[connection signal="pressed" from="play" to="play" method="_on_play_pressed"]

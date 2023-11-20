@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://7il3wlwugn2y"]
+
+[ext_resource type="Texture2D" uid="uid://yoenwep8cree" path="res://[Sprout Lands] Sprites/Characters/Basic Charakter Spritesheet.png" id="1_36ca7"]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(350, 347)
+texture = ExtResource("1_36ca7")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
